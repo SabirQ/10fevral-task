@@ -6,12 +6,12 @@ namespace Task1
     {
         static void Main(string[] args)
         {
-            
+
 
             #region 1ci versiya
             //int N = Convert.ToInt32(Console.ReadLine());
-            //if (N % 7 == 0) { Console.WriteLine(N); }
-            //else { Solv1(N,7); }
+            //if (N % 7 == 0) { Console.WriteLine("7-ye bolunur"); }
+            //else { Solv1(N, 7); }
 
 
 
@@ -25,7 +25,8 @@ namespace Task1
 
             #region 3cu versiya
             //int N = Convert.ToInt32(Console.ReadLine());
-            //Solv3(N, 7);
+            //if (N % 7 == 0) { Console.WriteLine("7-ye bolunur"); }
+            //else { Solv3(N, 7); }
             #endregion 
 
 
@@ -36,14 +37,14 @@ namespace Task1
         {
             
             int num3 = num1 % num2;
-            num1 = num1 - num2;
+            num1 = num1 - num3;
             Console.WriteLine(num1);
         }
         public static void Solv2(int num1,int num2)
         {
             if (num1 % num2 == 0)
             { 
-                Console.WriteLine(num1); 
+                Console.WriteLine(num2+" ededine bolunur"); 
             }
             else 
             {
